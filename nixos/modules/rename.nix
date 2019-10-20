@@ -286,6 +286,15 @@ with lib;
     (mkRemovedOptionModule [ "services" "redis" "appendOnlyFilename" ] "This option was never used.")
     (mkRemovedOptionModule [ "services" "redis" "pidFile" ] "This option was removed.")
 
+    # Console
+    (mkRenamedOptionModule [ "i18n" "consoleFont" ] [ "console" "font" ])
+    (mkRenamedOptionModule [ "i18n" "consoleKeyMap" ] [ "console" "keyMap" ])
+    (mkRenamedOptionModule [ "i18n" "consoleColors" ] [ "console" "colors" ])
+    (mkRenamedOptionModule [ "i18n" "consolePackages" ] [ "console" "packages" ])
+    (mkRenamedOptionModule [ "i18n" "consoleUseXkbConfig" ] [ "console" "useXkbConfig" ])
+    (mkRenamedOptionModule [ "boot" "earlyVconsoleSetup" ] [ "console" "earlySetup" ])
+    (mkRenamedOptionModule [ "boot" "extraTTYs" ] [ "console" "extraTTYs" ])
+
   ] ++ (forEach [ "blackboxExporter" "collectdExporter" "fritzboxExporter"
                    "jsonExporter" "minioExporter" "nginxExporter" "nodeExporter"
                    "snmpExporter" "unifiExporter" "varnishExporter" ]
