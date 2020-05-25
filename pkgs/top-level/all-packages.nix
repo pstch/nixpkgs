@@ -26589,4 +26589,6 @@ in
   vpsfree-client = callPackage ../tools/virtualization/vpsfree-client {};
 
   gpio-utils = callPackage ../os-specific/linux/kernel/gpio-utils.nix { };
+
+  pylxd = python3Packages.callPackage ../development/python-modules/pylxd { };
 }

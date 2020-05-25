@@ -6204,6 +6204,12 @@
     githubId = 737477;
     name = "Sibi";
   };
+  pistache = {
+    name = "Hugo Geoffroy";
+    email = "pistache@lebib.org";
+    github = "pstch";
+    githubId = 1682742;
+  };
   pstn = {
     email = "philipp@xndr.de";
     name = "Philipp Steinpaß";
